@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мой проект — каталог карточек</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Мой каталог</h1>
+    <p class="subtitle">Добавляй и убирай карточки — сетка перестраивается сама</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <form id="add-form">
+        <input type="text" id="input-title" placeholder="Заголовок" required />
+        <input type="text" id="input-desc" placeholder="Описание" required />
+        <input type="text" id="input-tag" placeholder="Тег (например: Дизайн)" />
+        <button type="submit">Добавить карточку</button>
+      </form>
+    </section>
+
+    <section id="grid" class="grid">
+      <!-- Карточки рендерятся сюда скриптом из js/data.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Сделано на HTML / CSS / JS · <a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
