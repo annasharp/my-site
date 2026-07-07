@@ -1,38 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="google" content="notranslate">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Мой проект — каталог карточек</title>
+  <title>Elza Karu — Children's Book Author</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <header class="site-header">
-    <h1>Мой каталог</h1>
-    <p class="subtitle">Добавляй и убирай карточки — сетка перестраивается сама</p>
+    <h1>Elza Karu</h1>
+    <p class="subtitle">Author of the Karu Stories series</p>
   </header>
 
   <main>
-    <section class="controls">
-      <form id="add-form">
-        <input type="text" id="input-title" placeholder="Заголовок" required />
-        <input type="text" id="input-desc" placeholder="Описание" required />
-        <input type="text" id="input-tag" placeholder="Тег (например: Дизайн)" />
-        <button type="submit">Добавить карточку</button>
-      </form>
+    <section id="about" class="about">
+      <h2>About the Author</h2>
+      <p>
+        Elza Karu writes warm, gentle stories inspired by everyday family moments —
+        the games children play, the trips they take, and the small adventures that
+        stay with them forever. The Karu Stories series brings these moments to life
+        for young readers everywhere.
+      </p>
     </section>
 
-    <section id="grid" class="grid">
-      <!-- Карточки рендерятся сюда скриптом из js/data.js -->
+    <section id="books" class="books">
+      <h2>Karu Stories</h2>
+      <div class="grid">
+        <article class="book-card">
+          <div class="book-cover">♟️</div>
+          <h3>How We Learned to Play Chess</h3>
+          <p>A cozy story about patience, thinking ahead, and the joy of a first game well played.</p>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover">🚜</div>
+          <h3>How We Visited Grandma and Grandpa's Farm</h3>
+          <p>A heartwarming trip to the countryside, full of animals, fresh air, and family love.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in Touch</h2>
+      <p>For collaborations, school visits, or just to say hello:</p>
+      <p><a href="mailto:hello@example.com">hello@example.com</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Сделано на HTML / CSS / JS · <a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+    <p>&copy; 2026 Elza Karu. All rights reserved.</p>
   </footer>
 
-  <script src="js/data.js"></script>
-  <script src="js/script.js"></script>
 </body>
 </html>
