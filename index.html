@@ -1,57 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="google" content="notranslate">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elza Karu — Children's Book Author</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elza Karu — Children's Book Author</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#D7E8BC;
+    display:flex;
+    justify-content:center;
+    padding:60px 20px;
+}
+
+.tree{
+    width:1100px;
+    text-align:center;
+}
+
+.box{
+    background:#EDF1FF;
+    border:2px solid #9AA8D8;
+    border-radius:14px;
+    padding:18px;
+    width:180px;
+    margin:auto;
+    position:relative;
+    box-shadow:0 5px 10px rgba(0,0,0,.08);
+}
+
+.box h3{
+    color:#35457A;
+    margin-bottom:8px;
+}
+
+.box p{
+    color:#5C6685;
+    font-size:14px;
+}
+
+.top{
+    width:320px;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    margin-top:80px;
+    position:relative;
+}
+
+
+.row .item{
+    position:relative;
+}
+
+
+.children{
+    margin-top:70px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.child{
+    width:180px;
+    background:white;
+    border:2px solid #CFCFCF;
+    border-radius:12px;
+    padding:15px;
+    position:relative;
+}
+
+
+.child h4{
+    margin-bottom:8px;
+    color:#444;
+}
+
+.child p{
+    color:#777;
+    font-size:14px;
+}
+
+.arrow{
+    font-size:40px;
+    margin-top:35px;
+    color:#666;
+}
+
+
+
+</style>
+
 </head>
 <body>
 
-  <header class="site-header">
-    <h1>Elza Karu</h1>
-    <p class="subtitle">Author of the Karu Stories series</p>
-  </header>
+<div class="tree">
 
-  <main>
-    <section id="about" class="about">
-      <h2>About the Author</h2>
-      <p>
-        Elza Karu writes warm, gentle stories inspired by everyday family moments —
+    <!-- Home -->
+    <div class="box top">
+        <h3>🏠Elza Karu</h3>
+        <p></p>
+    </div>
+
+    <div class="connector"></div>
+
+    <!-- Main Row -->
+    <div class="row">
+
+        <div class="item">
+            <div class="box">
+                <h3>📚 Books</h3>
+                <p>How We Learned to Play Chess
+A cozy story about patience, thinking ahead, and the joy of a first game well played.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="box">
+                <h3>👤 About the Author</h3>
+                <p>Elza Karu writes warm, gentle stories inspired by everyday family moments —
         the games children play, the trips they take, and the small adventures that
         stay with them forever. The Karu Stories series brings these moments to life
         for young readers everywhere.
-      </p>
-    </section>
+</p>
+            </div>
+        </div>
 
-    <section id="books" class="books">
-      <h2>Karu Stories</h2>
-      <div class="grid">
-        <article class="book-card">
-          <div class="book-cover">♟️</div>
-          <h3>How We Learned to Play Chess</h3>
-          <p>A cozy story about patience, thinking ahead, and the joy of a first game well played.</p>
-        </article>
+        <div class="item">
+            <div class="box">
+                <h3>🎨 For Kids</h3>
+                <p>Games, coloring pages, activities</p>
+            </div>
+        </div>
 
-        <article class="book-card">
-          <div class="book-cover">🚜</div>
-          <h3>How We Visited Grandma and Grandpa's Farm</h3>
-          <p>A heartwarming trip to the countryside, full of animals, fresh air, and family love.</p>
-        </article>
-      </div>
-    </section>
+        <div class="item">
+            <div class="box">
+                <h3>🛒 Buy a Book</h3>
+                <p>Amazon, Barnes & Noble, local stores</p>
+            </div>
+        </div>
 
-    <section id="contact" class="contact">
-      <h2>Get in Touch</h2>
-      <p>For collaborations, school visits, or just to say hello:</p>
-      <p><a href="mailto:hello@example.com">hello@example.com</a></p>
-    </section>
-  </main>
+        <div class="item">
+            <div class="box">
+                <h3>✉️ Contact</h3>
+                <p>Contact form & social media</p>
+            </div>
+        </div>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Elza Karu. All rights reserved.</p>
-  </footer>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="children">
+
+        <div class="child">
+            <h4>Book Page</h4>
+            <p>Book cover, description, reviews, Buy button</p>
+        </div>
+
+        <div class="child">
+            <h4>FAQ</h4>
+            <p>Answers to common questions</p>
+        </div>
+
+        <div class="child">
+            <h4>Free Downloads</h4>
+            <p>Coloring pages, posters, activity sheets</p>
+        </div>
+
+        <div class="child">
+            <h4>Bookstores</h4>
+            <p>Where to buy online and in stores</p>
+        </div>
+
+        <div class="child">
+            <h4>Contact Form</h4>
+            <p>For readers, schools, media & publishers</p>
+        </div>
+
+    </div>
+
+    <div class="arrow">↓</div>
+
+</div>
 
 </body>
 </html>
