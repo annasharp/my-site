@@ -2,14 +2,14 @@
    DESIGN VARIABLES
    ========================================================================== */
 :root {
-    --bg-color: #ffffff;       /* Pure white background */
+    --bg-color: #e1f9c9;       /* light green background */
     --card-bg: #f9fafb;        /* Soft off-white background */
     --text-main: #111827;      /* Dark charcoal text */
     --text-sub: #4b5563;       /* Slate grey text */
     --border-color: rgba(0, 0, 0, 0.08); /* Soft border */
     
-    --primary: #7c3aed;        /* Vibrant purple accent */
-    --primary-hover: #6d28d9;
+    --primary: #ec90e0;        /* Vibrant purple accent */
+    --primary-hover: #7995f1;
     --secondary: #0891b2;      /* Ocean blue accent */
     
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -43,7 +43,7 @@ h1, h2, h3, h4 {
 }
 
 a {
-    color: inherit;
+    color:#e07aca;
     text-decoration: none;
     transition: color var(--transition);
 }
@@ -145,7 +145,7 @@ section {
 }
 
 .logo a {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     font-weight: 800;
     font-family: 'Outfit', sans-serif;
     letter-spacing: -0.5px;
@@ -183,7 +183,7 @@ section {
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 1.15;
     margin-bottom: 20px;
     background: linear-gradient(135deg, var(--text-main) 40%, var(--text-sub));
