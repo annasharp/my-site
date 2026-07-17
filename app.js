@@ -1,5 +1,26 @@
 // Wait for the HTML document to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
+     // ==========================================================================
+    // 0. MOBILE NAV TOGGLE (hamburger menu)
+    // ==========================================================================
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('is-open');
+            navToggle.classList.toggle('is-active', isOpen);
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        navLinks.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('is-open');
+                navToggle.classList.remove('is-active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 
     // ==========================================================================
     // 1. SIMPLE NEWSLETTER FORM SUBMISSION
