@@ -464,9 +464,21 @@ input:focus, textarea:focus {
    RESPONSIVE DESIGN Breakpoints
    ========================================================================== */
 @media (max-width: 900px) {
+    /* Button on the left, logo centered, empty column balances it out */
+    .header-flex {
+        display: grid;
+        grid-template-columns: 32px 1fr 32px;
+        align-items: center;
+    }
+
+    .logo {
+        grid-column: 2;
+        text-align: center;
+    }
       /* Show hamburger, hide horizontal menu */
     .nav-toggle {
         display: flex;
+        grid-column: 1;
     }
 
     .nav-links {
